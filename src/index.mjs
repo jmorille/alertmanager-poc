@@ -7,10 +7,10 @@ function generateError() {
     const data = [
         {
             "labels": {
-                "<labelname>": "<labelvalue>",
+                "<labelname>": "<labelvalue>"
             },
             "annotations": {
-                "<labelname>": "<labelvalue>",
+                "<labelname>": "<labelvalue>"
             },
             "startsAt": "<rfc3339>",
             "endsAt": "<rfc3339>",
