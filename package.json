@@ -1,0 +1,23 @@
+{
+  "name": "alertmanager-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules src/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmorille/alertmanager-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmorille/alertmanager-poc/issues"
+  },
+  "homepage": "https://github.com/jmorille/alertmanager-poc#readme",
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  }
+}
