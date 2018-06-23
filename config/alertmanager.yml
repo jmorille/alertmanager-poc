@@ -18,7 +18,7 @@ receivers:
   - to: 'xxx+alerts@gmail.com'
 - name: 'web.hook'
   webhook_configs:
-  - url: 'http://127.0.0.1:5001/'
+  - url: 'http://MAX:3000/'
 inhibit_rules:
   - source_match:
       severity: 'critical'
