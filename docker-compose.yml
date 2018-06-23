@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+
+  alertmanager:
+    image: quay.io/prometheus/alertmanager
+    restart: unless-stopped
+    ports:
+      - "9093:9093"
+    volumes:
+      - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
+    networks:
+      - alertmanager-network
+
+networks:
+    alertmanager-network:
