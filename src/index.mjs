@@ -4,10 +4,11 @@ import fetch from 'node-fetch';
 function generateError() {
     console.log("----------------------------------");
     // "endsAt": "<rfc3339>",
+    // "startsAt": new Date().toISOString(),
     const data = [
         {
             "labels": {
-                "alertname": "test-alert"
+                "alertname": "baby-alert"
             },
             "annotations": {
                 "toto": "tota"

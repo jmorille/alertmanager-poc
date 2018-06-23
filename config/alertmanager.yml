@@ -1,7 +1,8 @@
 global:
   resolve_timeout: 5m
   smtp_smarthost: 'smtp.free.fr:25'
-  smtp_from: 'alertmanager@example.org'
+  smtp_from: 'alertmanager@max.org'
+  smtp_require_tls: false
 
 
 route:
@@ -10,7 +11,11 @@ route:
   group_interval: 10s
   repeat_interval: 1h
   receiver: 'web.hook'
+
 receivers:
+- name: 'team-X-mails'
+  email_configs:
+  - to: 'xxx+alerts@gmail.com'
 - name: 'web.hook'
   webhook_configs:
   - url: 'http://127.0.0.1:5001/'

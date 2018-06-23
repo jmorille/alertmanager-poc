@@ -7,7 +7,7 @@ services:
     ports:
       - "9093:9093"
     volumes:
-      - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
+      - ./config:/etc/alertmanager/
     networks:
       - alertmanager-network
 
